@@ -141,7 +141,6 @@ nav {
     margin: auto
 }
 
-/* Services Page */
 
 #services h1 {
     color: rgb(159, 124, 22);
@@ -256,7 +255,6 @@ nav {
     background-color: #e6c769;
 }
 
-/* Products Featured Collection */
 
 #products-display {
     background-color: white;
@@ -524,7 +522,6 @@ nav {
     background-color: rgb(210, 210, 210);
 }
 
-/* PRODUCT PAGE */
 
 #single-product-container {
     width: 100%;
@@ -888,3 +885,4 @@ ul {
 .button-paginator .pagination-active span {
     color: white;
 }
+
