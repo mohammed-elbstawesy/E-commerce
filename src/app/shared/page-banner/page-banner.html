@@ -1,0 +1,11 @@
+<div class="banner" 
+     [style.background-image]="'url(' + backgroundImageUrl + ')'">
+    <div class="banner-gradient" id="product-gradient-banner">
+        <div class="banner-content" id="product-banner-content">
+            <h1>{{ title }}</h1>
+            <h2 *ngIf="breadcrumb">
+                Home &nbsp;<span>></span>&nbsp; {{ breadcrumb }}
+            </h2>
+        </div>
+    </div>
+</div>
