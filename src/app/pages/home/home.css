@@ -1,0 +1,8 @@
+:host ::ng-deep .slideshow {
+    display: flex !important;
+}
+
+
+:host ::ng-deep .product-list {
+    flex-wrap: wrap;
+}
