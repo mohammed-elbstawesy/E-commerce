@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<app-page-banner 
+    title="Our Products" 
+    breadcrumb="Products"
+    backgroundImageUrl="assets/static/images/green-sofa.webp">
+</app-page-banner>
+
+<div id="page-content">
+    <div class="product-type-list">
+        <button *ngFor="let type of productTypes"
+                class="product-type-btn"
+                [class.active]="type === activeFilter"
+                (click)="filterProducts(type)"
+                type="button">
+            {{ type }}
+        </button>
+    </div>
+
+    <div id="product-content">
+        <app-product-card *ngFor="let product of paginatedProducts" 
+                          [product]="product">
+        </app-product-card>
+    </div>
+
+    <div class="button-paginator">
+        <button id="first-page-btn" 
+                type="button" 
+                (click)="firstPage()"
+                [disabled]="currentPage === 1">
+            <span>First</span>
+        </button>
+        <button id="prev-page-btn" 
+                type="button" 
+                (click)="prevPage()"
+                [disabled]="currentPage === 1">
+            <span>Previous</span>
+        </button>
+        
+        <button type="button" class="pagination-active">
+            <span id="page-number">{{ currentPage }}</span>
+        </button>
+
+        <button id="next-page-btn" 
+                type="button" 
+                (click)="nextPage()"
+                [disabled]="currentPage === totalPages">
+            <span>Next</span>
+        </button>
+        <button id="last-page-btn" 
+                type="button" 
+                (click)="lastPage()"
+                [disabled]="currentPage === totalPages">
+            <span>Last</span>
+        </button>
+    </div>
+</div>
