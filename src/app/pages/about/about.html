@@ -1,0 +1,118 @@
+<nav [ngClass]="{ 'scrolled': isScrolled }">
+    <div id="about-page-navbar">
+        <div>
+            <img [src]="navLogo" 
+                 [width]="navLogoWidth" 
+                 height="80"
+                 alt="ComFi Logo">
+        </div>
+        <div id="about-page-nav-text">
+            <ul>
+                <li>
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                    <a routerLink="/products">Products</a>
+                </li>
+                <li>
+                    <a routerLink="/home" fragment="services">Services</a>
+                </li>
+                <li>
+                    <a routerLink="/about">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="about-page-banner">
+    <div id="about-gradient-banner">
+        <div id="about-banner-content">
+            <h1>About Us</h1>
+            <h2>Excellent quality furniture</h2>
+        </div>
+    </div>
+</div>
+
+<div id="about-page-content">
+    <div class="about-section" id="about-section-1">
+        <div class="about-section-content">
+            <h1 class="about-section-title">Who We Are</h1>
+            <div class="border-line about-border-centered"></div>
+            <div class="about-text-container">
+                <br>
+                <p class="about-text">
+                    With a passion for craftsmanship and an unwavering commitment to quality, we curate a collection of sofas, beds, chairs, and more, designed to elevate your everyday living experience. 
+                    At ComFi, we believe that comfort is not just a luxury but a necessity in today's fast-paced world.
+                </p>
+                <br>
+                <p class="about-text">
+                    We are dedicated to enhancing the quality of your life by providing an exquisite range of comfortable furniture that transforms your space into a haven of relaxation and tranquility.
+                    Each piece in our collection is meticulously crafted with the finest materials, ensuring durability, style, and, above all, comfort.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about-section-2">
+        <div class="about-section-content" id="about-section-2-content">
+            <h1 class="about-section-title">What We Do</h1>
+            <div class="border-line"></div>
+            <div class="about-text-container">
+                <br>
+                <p class="about-text">
+                    Our team of designers combines timeless elegance with modern sensibilities to create furniture that seamlessly integrates into any decor style, from contemporary chic to classic sophistication. Whether you're lounging with loved ones on a cozy sofa, sinking into the plush embrace of a luxurious bed, or unwinding in an ergonomically designed chair, ComFi furniture promises to envelop you in unparalleled comfort.
+                </p>
+            </div>
+        </div>
+        <div id="about-section-2-image">
+            <img alt="who-we-are-sofa" src="assets/static/images/about-pages/about-page1.jpeg" width="auto" height="400px">
+        </div>
+    </div>
+    
+    <div class="about-section" id="about-section-3">
+        <h1 class="about-section-title">Our Founders</h1>
+        <div class="about-subtitle">Meet Our Team</div>
+        <div class="founder-card">
+            <div class="founder-image-container">
+                <img src="assets/static/images/founders/founder.jpeg" class="founder-image" id="founder-img-3" alt="Amanda Wills">
+            </div>
+            <div class="founder-info">
+                <p class="founder-name">Eng.Mahmoud Hammad</p>
+                <p class="founder-title">Teaching assistant</p>
+            </div>
+        </div>
+        <div class="founders-container">
+            <div class="founder-card">
+                <div class="founder-image-container">
+                    <img src="assets/static/images/founders/founder1.jpeg" class="founder-image" id="founder-img-1" alt="George Jabbons">
+                </div>
+                <div class="founder-info">
+                    <p class="founder-name">Mohamed El-Bastawesy</p>
+                    <p class="founder-title">Designer and Implemntaion</p>
+                </div>
+            </div>
+            
+            <div class="founder-card">
+                <div class="founder-image-container">
+                    <img src="assets/static/images/founders/founder3.jpeg" class="founder-image" id="founder-img-2" alt="Sarah Kilensli">
+                </div>
+                <div class="founder-info">
+                    <p class="founder-name">Yassa Halim</p>
+                    <p class="founder-title">Designer and Implemntaion</p>
+                </div>
+            </div>
+            
+            <div class="founder-card">
+                <div class="founder-image-container">
+                    <img src="assets/static/images/founders/founder2.jpeg" class="founder-image" id="founder-img-3" alt="Amanda Wills">
+                </div>
+                <div class="founder-info">
+                    <p class="founder-name">Youssef Sawy</p>
+                    <p class="founder-title">Designer and Implemntaion</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
