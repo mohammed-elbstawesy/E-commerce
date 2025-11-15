@@ -1,0 +1,78 @@
+<app-header></app-header>
+
+<div id="main">
+    <div class="gradient">
+        <div class="main-text">
+            <h1>Welcome to <span class="comfi-highlight">ComFi</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ex sem. 
+                Phasellus nec nibh sit amet nibh luctus vulputate eu mollis diam. Nullam semper 
+                tempor mi. Proin efficitur ultrices risus, id congue nulla tempus at.
+            </p>
+        </div>
+        <div class="main-buttons">
+            <button id="btn1" type="button">Show More</button>
+            <button id="btn2" type="button">Contact</button>
+        </div>
+    </div>
+    <img src="assets/static/images/index-bg.jpeg" alt="Main background">
+</div>
+
+<div id="products-display">
+    <h1 class="title-design-1">Featured Collection</h1>
+    <div class="border-line"></div>
+    <div class="products-container">
+        
+        <div class="product-list">
+            <app-product-card 
+                *ngFor="let product of featuredProducts" 
+                [product]="product"
+                class="slideshow">
+            </app-product-card>
+        </div>
+
+    </div>
+</div>
+
+<div id="services">
+    <div class="heading-style">
+        <h1>
+            <div id="services-title">Our Services</div>
+            <div id="services-quote">"Remarkable and Exceptional Customer Service" - Susan M.</div>
+        </h1>
+    </div>
+    <div class="services-container">
+        <div class="services-box" id="service-1">
+            <div>
+                <img src="assets/static/images/services/money-bag.png" alt="money-bag">
+            </div>
+            <div class="service-box-title">Affordable Price</div>
+            <div class="box-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin at metus id tortor consequat tempor eu egestas mi.
+            </div>
+            <button class="more-btn" type="button">MORE</button>
+        </div>
+        <div class="services-box" id="service-2">
+            <div>
+                <img src="assets/static/images/services/excellent-service.png" alt="247-service">
+            </div>
+            <div class="service-box-title">Excellent Service</div>
+            <div class="box-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin at metus id tortor consequat tempor eu egestas mi.
+            </div>
+            <button class="more-btn" type="button">MORE</button>
+        </div>
+        <div class="services-box" id="service-3">
+            <div>
+                <img src="assets/static/images/services/enrich-experience.jpeg" alt="people-celebrating">
+            </div>
+            <div class="service-box-title">Enriching Experience</div>
+            <div class="box-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin at metus id tortor consequat tempor eu egestas mi.
+            </div>
+            <button class="more-btn" type="button">MORE</button>
+        </div>
+    </div>
+</div>
